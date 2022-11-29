@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
-  
+  runApp(const MaterialApp(
+    home: MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -12,7 +13,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text('IDE for iPAD'),
+        child: Text(
+          'IDE for iPAD',
+          style: TextStyle(
+            color: Colors.red,
+            fontSize: 20,
+          ),
+        ),
       ),
     );
   }
